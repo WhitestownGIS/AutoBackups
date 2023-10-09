@@ -1,0 +1,10 @@
+#Visit https://www.autoitscript.com/site/ for more information
+Run("C:\Program Files (x86)\Power Automate Desktop\PAD.Console.Host.exe")
+WinWaitActive("Power Automate", "", 10)
+WinMove("Power Automate","",0,0)
+WinSetState("Power Automate","", @SW_MAXIMIZE)
+#CLICK ON MYFLOWS TAB
+MouseClick("left", 197, 139)
+#CLICK ON RUN BUTTON
+MouseClick("left",571,253,1)
+Exit
