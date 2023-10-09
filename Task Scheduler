@@ -8,7 +8,7 @@ How to set up a reoccuring task in Windows Task Scheduler:
     c. Actions Tab > New - Select 'Start a Program'
                          - Select 'Browse' to navigate to your compiled AutoIt script (ending in .exe)
 
-    d. Leave all other settings to default selections
+    d. Leave all other settings to default
 
 
 **To compile the AutoIt script, right-click the file and select 'Compile Script (x86)'
