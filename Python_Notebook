@@ -1,6 +1,7 @@
 #In an ArcGIS Pro project, add the parcel feature service layer
-#On the Analysis Tab, select Python Notebook from the Python drop-down menu 
-#Paste the following code into the new notebook and save 
+#On the Analysis Tab, select Python Notebook from the Python drop-down menu
+#Paste the following code into the notebook
+#Select RUN to test the code, you can delete this file after tested 
 
 import arcpy
 import os
