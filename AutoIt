@@ -1,4 +1,4 @@
-#Visit https://www.autoitscript.com/site/ for more information
+#Visit https://www.autoitscript.com/site/ for information and download instructions
 Run("C:\Program Files (x86)\Power Automate Desktop\PAD.Console.Host.exe")
 WinWaitActive("Power Automate", "", 10)
 WinMove("Power Automate","",0,0)
