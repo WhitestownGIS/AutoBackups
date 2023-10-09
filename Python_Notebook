@@ -1,3 +1,7 @@
+#In an ArcGIS Pro project, add the parcel feature service layer
+#On the Analysis Tab, select Python Notebook from the Python drop-down menu 
+#Paste the following code into the new notebook and save 
+
 import arcpy
 import os
 import datetime
@@ -5,17 +9,21 @@ import datetime
 arcpy.env.workspace = r"E:\ParcelBackup\Scratchworkspace.gdb"
 arcpy.env.overwriteOutput = True
 
+#Select the map and layer of interest 
 aprx = arcpy.mp.ArcGISProject('Current')
 myMap = aprx.listMaps('Parcel_Backup_Map')[0]
 layer = myMap.listLayers()[0]
+#Print layer to confirm selection
 print(layer)
 
+#Get current date and append it to the file name 
 lyr = myMap.listLayers("PARCELS")[0]
 for layer in myMap.listLayers(lyr):
     today = datetime.date.today()
     date = today.strftime("%m_%d_%Y")
     name = str(lyr) + "_Backup_" + str(date)
+#Print lyr to confirm selection
 print(lyr)
 
-
+#Save new layer 
 arcpy.management.SaveToLayerFile('PARCELS', name,'RELATIVE',"CURRENT")
