@@ -1,0 +1,21 @@
+import arcpy
+import os
+import datetime
+
+arcpy.env.workspace = r"E:\ParcelBackup\Scratchworkspace.gdb"
+arcpy.env.overwriteOutput = True
+
+aprx = arcpy.mp.ArcGISProject('Current')
+myMap = aprx.listMaps('Parcel_Backup_Map')[0]
+layer = myMap.listLayers()[0]
+print(layer)
+
+lyr = myMap.listLayers("PARCELS")[0]
+for layer in myMap.listLayers(lyr):
+    today = datetime.date.today()
+    date = today.strftime("%m_%d_%Y")
+    name = str(lyr) + "_Backup_" + str(date)
+print(lyr)
+
+
+arcpy.management.SaveToLayerFile('PARCELS', name,'RELATIVE',"CURRENT")
