@@ -1,5 +1,6 @@
 # AutoBackups
-The Inspiration: The county feature service layer overrides its data each time a change is made, which fails to preserve parent parcels and their related data fields. 
+The Inspiration: A land parcel feature service layer maintained by the county that overrides its data each time a change is made, which fails to preserve parent parcels and their related data fields. 
+
 The Goal: To automatically save weekly backups of all online feature layers, inspired by the parcel layer. In that case, giving us the information to track parent parcels and develop historic layers. 
 
 The Process: 
