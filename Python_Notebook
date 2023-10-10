@@ -1,7 +1,7 @@
 #In an ArcGIS Pro project, add the parcel feature service layer
 #On the Analysis Tab, select Python Notebook from the Python drop-down menu
 #Paste the following code into the notebook
-#Select RUN to test the code, you can delete this file after tested 
+#Select RUN to test the code 
 
 import arcpy
 import os
@@ -26,5 +26,5 @@ for layer in myMap.listLayers(lyr):
 #Print lyr to confirm selection
 print(lyr)
 
-#Save new layer 
+#Save new layer, use a relative path if you want to move the file later 
 arcpy.management.SaveToLayerFile('PARCELS', name,'RELATIVE',"CURRENT")
