@@ -1,7 +1,7 @@
 # AutoBackups
 The Inspiration: A land parcel layer maintained by the local county that overrides its geometry and tabular data with every update, failing to preserve parent parcels and their related data fields. 
 
-The Goal: To automatically save weekly backups of all online feature layers. 
+The Goal: To create an automatic process that saves weekly backups of all important online feature layers. 
 
 The Process: 
 1. Develop an arcpy script that will save the current layer with the date in its field name. This script runs in a python notebook saved in an ArcGIS Pro project that contains the online layers of interest.
