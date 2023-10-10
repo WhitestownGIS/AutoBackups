@@ -12,3 +12,8 @@ The Process:
 
 The Results: A population of files that record weekly changes in our online feature layers without any user interference.
 
+
+Requirements: 
+-ArcGIS Pro
+-AutoIT
+-Windows Task Scheduler
