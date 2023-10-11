@@ -2,7 +2,7 @@
 #On the Analysis Tab, select Python Notebook from the Python drop-down menu
 #Paste the following code into the notebook line
 #Select RUN to test the code 
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 import arcpy
 import os
@@ -24,6 +24,5 @@ print(lyr)
 
 arcpy.management.SaveToLayerFile('#INSERT LAYER NAME#', name,'RELATIVE',"CURRENT")
 
-
-
-##IF YOU WANT BACKUP MORE THAN ONE LAYER FROM A MAP, REPEAT LINES 13-25 AS MANY TIMES AS NEEDED. REMEMBER TO CHANGE THE LAYER NAME EACH REPETITON.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#IF YOU WANT BACKUP MORE THAN ONE LAYER FROM A MAP, REPEAT LINES 13-25 AS MANY TIMES AS NEEDED. REMEMBER TO CHANGE THE LAYER NAME EACH REPETITON.
