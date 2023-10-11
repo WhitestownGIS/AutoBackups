@@ -1,5 +1,6 @@
 How to set up a reoccuring task in Windows Task Scheduler:
-  1. In the Windows Search bar, find Task Scheduler and open the application
+
+  1. In the Windows Search bar, find Task Scheduler and lanch the application
   2. Click 'Create Task'
     a. General Tab - Name the task 
                    - Change the security option to 'Run whether user is logged on or not' 
