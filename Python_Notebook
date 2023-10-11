@@ -7,24 +7,24 @@ import arcpy
 import os
 import datetime
 
-arcpy.env.workspace = r"E:\ParcelBackup\Scratchworkspace.gdb"
-arcpy.env.overwriteOutput = True
 
-#Select the map and layer of interest 
+arcpy.env.workspace = r"#INSERT OUTPUT FILE PATH#"
+
 aprx = arcpy.mp.ArcGISProject('Current')
-myMap = aprx.listMaps('Parcel_Backup_Map')[0]
+myMap = aprx.listMaps('#INSERT MAP NAME#')[0]
 layer = myMap.listLayers()[0]
-#Print layer to confirm selection
 print(layer)
 
-#Get current date and append it to the file name 
-lyr = myMap.listLayers("PARCELS")[0]
+lyr = myMap.listLayers("#INSERT LAYER NAME#")[0]
 for layer in myMap.listLayers(lyr):
     today = datetime.date.today()
     date = today.strftime("%m_%d_%Y")
     name = str(lyr) + "_Backup_" + str(date)
-#Print lyr to confirm selection
 print(lyr)
 
-#Save new layer, use a relative path if you want to move the file later 
-arcpy.management.SaveToLayerFile('PARCELS', name,'RELATIVE',"CURRENT")
+
+arcpy.management.SaveToLayerFile('#INSERT LAYER NAME#', name,'RELATIVE',"CURRENT")
+
+
+
+##IF YOU WANT PULL MORE THAN ONE LAYER FROM A MAP, REPEAT LINES 13-26 AS MANY TIMES AS NEEDED. REMEMBER TO CHNAEG THE LAYER NAME EACH REPETITON.
