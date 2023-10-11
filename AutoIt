@@ -1,6 +1,9 @@
-#Visit https://www.autoitscript.com/site/ for information and download instructions
+Visit https://www.autoitscript.com/site/ for information and download instructions
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+##WEEKLY BACKUP
 
-WEEKLY 
+#Step 1: Open the Flow properties in the Power Automate Weekly Flow and set the keybaord shortcut to "Ctrl + W"
+#Step 2: Save
 
 Run("C:\Program Files (x86)\Power Automate Desktop\PAD.Console.Host.exe")
 WinWaitActive("Power Automate", "", 10)
@@ -9,9 +12,12 @@ WinSetState("Power Automate","", @SW_MAXIMIZE)
 Send("^w")
 Exit
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+##MONTHLY BACKUP
 
+#Step 1: Open the Flow properties in the Power Automate Monthly Flow and set the keybaord shortcut to "Ctrl + M"
+#Step 2: Save
 
-MONTHLY
 Run("C:\Program Files (x86)\Power Automate Desktop\PAD.Console.Host.exe")
 WinWaitActive("Power Automate", "", 10)
 WinMove("Power Automate","",0,0)
