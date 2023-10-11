@@ -3,7 +3,7 @@ How to set up a reoccuring task in Windows Task Scheduler:
   2. Click 'Create Task'
     a. General Tab - Name the task 
                    - Change the security option to 'Run whether user is logged on or not' 
-    b. Triggers Tab > New - Set the frequency to weekly
+    b. Triggers Tab > New - Set the frequency
                           - Chose a date and time to start the task 
     c. Actions Tab > New - Select 'Start a Program'
                          - Select 'Browse' to navigate to your compiled AutoIt script (ending in .exe)
